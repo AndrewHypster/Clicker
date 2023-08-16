@@ -8,6 +8,7 @@ body
   .App
     width: 100vw
     height: 100vh
+    overflow: hidden
     grid-template-columns: 1fr 1fr 1fr
     grid-template-rows: 0.6fr 5fr
     display: grid
@@ -29,9 +30,10 @@ body
       position: absolute
       width: 100vw
       height: 100vh
+      padding: 5vw
       right: 0
       transform: translateX(100%)
       transition: all 1s
 
       &:target
-        transform: translateX(0%)
+        transform: translateX(100%)
