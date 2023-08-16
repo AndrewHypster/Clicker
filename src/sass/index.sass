@@ -27,13 +27,12 @@ body
     .Clicker
       grid-column: span 3 !important
     #SideBar
-      position: absolute
+      position: fixed
       width: 100vw
       height: 100vh
-      padding: 5vw
       right: 0
       transform: translateX(100%)
       transition: all 1s
 
       &:target
-        transform: translateX(100%)
+        transform: translateX(0%)
