@@ -1,0 +1,59 @@
+.Shop
+  padding: 0 8px
+  background: var(--Black)
+  color: var(--White)
+  user-select: none
+
+  h2
+    width: fit-content
+    margin: 16px auto
+    font-size: 4rem
+  
+  ul
+    max-height: calc(100vh - 50px - 5rem - 60px)
+    width: fit-content
+    margin: 0 auto
+    padding-bottom: 20px
+    overflow-y: scroll
+    gap: 20px
+    display: grid
+    &::-webkit-scrollbar
+      display: none
+
+    li
+      height: 100px
+      padding: 8px 8px
+      background: var(--BlueDark)
+      border-radius: 16px
+      cursor: pointer
+      align-items: center
+      grid-template-columns: 100px auto
+      gap: 16px
+      display: grid
+
+      img
+        max-width: 100px
+        max-height: 100px
+    
+    .info
+      grid-template-rows: 30px 30px
+      display: grid
+
+      b
+        font-size: 20px
+      div
+        gap: 4px 16px
+        grid-template-columns: 1fr 1fr
+        display: grid
+
+@media only screen and (max-width: 1000px)
+  .Shop
+    h2
+      font-size: 3rem
+    ul
+      max-height: calc(100vh - 50px - 3rem)
+
+      .info
+        div
+          gap: 4px 0
+          grid-template-columns: 110px 1fr
